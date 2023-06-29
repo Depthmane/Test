@@ -7,7 +7,7 @@ const PostFilter = ({filter, setFilter}) => {
         <div>
             <MyInput
                 value={filter.query}
-                onChange={e=> setFilter({ ...filter, query: e.target.value})}
+                onChange={e => setFilter({...filter, query: e.target.value})}
                 placeholder={'Поиск..'}
             />
             <MySelect
@@ -15,8 +15,8 @@ const PostFilter = ({filter, setFilter}) => {
                 onChange={selectedSort => setFilter({...filter, sort: selectedSort})}
                 defaultValue="Сортировка"
                 options={[
-                    {value: 'title', name:'по названию'},
-                    {value: 'body', name:'по содержанию'},
+                    {value: 'title', name: 'по названию'},
+                    {value: 'body', name: 'по содержанию'},
                 ]}
             />
         </div>
